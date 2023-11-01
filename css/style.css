@@ -3,9 +3,9 @@
 
 /* Custom properties */
 :root {
- --med-blue: #2B315E;
- --dark-blue:  #2A315F;
- --gold: #FFB859;
+    --med-blue: #2B315E;
+    --dark-blue: #2A315F;
+    --gold: #FFB859;
 }
 
 /* NORMALIZING RULES */
@@ -33,9 +33,14 @@ body {
 header {
     background: #585C7C;
     color: white;
-
+    position: fixed;
+    z-index: 9;
+    width: 100%
 }
 
+main {
+padding-top: 148px;
+}
 .pg-padding {
     padding: 30px 50px;
 }
@@ -48,7 +53,7 @@ header {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
     grid-gap: 50px;
-
+    position: relative;
 }
 
 
@@ -109,7 +114,7 @@ header {
 
 .primary-nav ul a:hover,
 .primary-nav ul a.active {
- border-bottom: 1px dotted white;
+    border-bottom: 1px dotted white;
 }
 
 /* typography */
@@ -132,12 +137,15 @@ h3 {
     border-radius: 15px;
     display: inline-block;
     transition: .5s;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
 }
 
 .button-gold {
     background: var(--gold);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .button-gold:hover {
